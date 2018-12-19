@@ -1,0 +1,19 @@
+<p>
+  j'ai consideré la 1er colonne est le codeEtat !!
+</p>
+<p>
+  -149.95038 est un code etat tu peux l'utiliser :)
+</p>
+<div>
+  <input type="text" [(ngModel)]="codeEtat" />
+  <button (click)="getMacdo()">
+    Rechercher
+  </button>
+</div>
+<div *ngIf="macdo">
+  <h2>Macdo Details</h2>
+  <div><span>Description: </span>{{macdo.codeEtat}}</div>
+  <div><span>Number: </span>{{macdo.number}}</div>
+  <div><span>Nom : </span>{{macdo.nom}}</div>
+  <div><span>Adresse: </span>{{macdo.adresse}}</div>
+</div>
